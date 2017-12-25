@@ -152,7 +152,7 @@ etc..
 - SAP
 - Yahoo!Japan
 
--- 
+--
 
 #### 参考サイト
 
@@ -168,6 +168,7 @@ etc..
 - Redhat 社が提供する Kubernetes の拡張。
 - Kubernetes はコミュニティベースで運用されており、サポート等欲しい場合は OpenShift Enterprise を使用した方が良いと思われます。
 - [TestDrive on Cloud](https://www.openshift.com/container-platform/trial.html)
+
 --
 
 ### OpenShift Enterprise
