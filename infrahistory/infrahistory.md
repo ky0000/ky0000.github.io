@@ -171,9 +171,40 @@ etc..
 
 --
 
+### OpenShift と Kubernetes の違い
+
+[参考:OpenShiftとKubernetesのちがうところ](http://jp-redhat.com/openeye_online/column/omizo/4093/)
+1. アクセスコントロール
+  1. K8SのNameSpace機能を拡張し、DockerImage へのアクセスポリシーを設定することが可能
+1. 便利なクラスタ管理コンポーネント
+  1. Integrated Docker Registry
+  1. Software Defined Network
+  1. Build Configuration
+  1. Deployment Configuration
+  1. Source to Image
+  1. Image Stream
+  1. Route
+
+--
+
 ### OpenShift Enterprise
 
 - PaaS環境の構築から自社で行うタイプ
+- [マニュアル](https://access.redhat.com/documentation/en-us/openshift_container_platform/?version=3.7)
+- [必要スペック(3.6)](https://access.redhat.com/documentation/en-us/openshift_container_platform/3.6/single/installation_and_configuration/index)
+
+### スペック表
+
+|item                     |Master        |Node                   |
+|:-                       |:-            |:-                     |
+|BaseOS(min)              |RHEL7.3 or 7.4|RHEL7.3 or 7.4         |
+|NetworkManager           |-             |1.0(min)               |
+|vCPU                     |2             |1                      |
+|RAM(min)                 |16GB          |8GB                    |
+|HDD(/var/)               |40GB          |15GB                   |
+|HDD(/usr/local/bin)      |1GB           |1GB                    |
+|HDD(/tmp)                |1GB           |1GB                    |
+|HDD(for Docker's Storage)|-             |15GB(unallocated space)|
 
 --
 
