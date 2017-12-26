@@ -45,7 +45,7 @@
 
 ## 最初にして最後の目的
 
-#### インフラ構築/管理に関する自動化基盤の提供#
+#### インフラ構築/管理に関する自動化基盤の提供
 
 --
 
@@ -68,6 +68,8 @@
 どうしてもパブリッククラウドを使いたくない、という場合はオンプレ環境にOpenStackを構築することで、
 リソースの調達等が自動化でき、コストダウン可能になる。  
 しかし、やはり自社で用意できるデータセンターの規模には限界があり、コストもかかるので大人数で巨大なリソースを共有するパブリッククラウドを使った方がメリットが大きいと言える。
+
+--
 
 ### 参考サイト
 
@@ -135,10 +137,9 @@ etc..
 ### Kubernetes
 
 - 2014年6月7日 発表
-- 2015年7月21日 v1.0 リリース & Cloud Native Computing Foundation（CNCF）を設立し、Kubernetes をシードテクノロジーとして提供。
-- コンテナ化アプリケーションの配備、スケーリング、管理を自動化するためのオープンソースシステムです。
-- ホストのクラスタ間でアプリケーション・コンテナの配置、スケーリング、および操作を自動化するための「プラットフォーム」を提供することを目的としています。
-- 元々Googleによって設計され、Cloud Native Computing Foundationに寄贈。
+- 2015年7月21日 v1.0 リリース
+- ホストのクラスタ間でアプリケーション・コンテナの配置、スケーリング、および操作を自動化するための「プラットフォーム」を提供することを目的として設計されています。
+- 元々Googleによって設計され、v1.0 リリース時に合わせて設立された Cloud Native Computing Foundation(CNCF)にシードテクノロジーとして寄贈されました。
 
 
 --
@@ -151,7 +152,7 @@ etc..
 - SAP
 - Yahoo!Japan
 
--- 
+--
 
 #### 参考サイト
 
@@ -167,11 +168,43 @@ etc..
 - Redhat 社が提供する Kubernetes の拡張。
 - Kubernetes はコミュニティベースで運用されており、サポート等欲しい場合は OpenShift Enterprise を使用した方が良いと思われます。
 - [TestDrive on Cloud](https://www.openshift.com/container-platform/trial.html)
+
+--
+
+### OpenShift と Kubernetes の違い
+
+[参考:OpenShiftとKubernetesのちがうところ](http://jp-redhat.com/openeye_online/column/omizo/4093/)
+1. アクセスコントロール
+  1. K8SのNameSpace機能を拡張し、DockerImage へのアクセスポリシーを設定することが可能
+1. 便利なクラスタ管理コンポーネント
+  1. Integrated Docker Registry
+  1. Software Defined Network
+  1. Build Configuration
+  1. Deployment Configuration
+  1. Source to Image
+  1. Image Stream
+  1. Route
+
 --
 
 ### OpenShift Enterprise
 
 - PaaS環境の構築から自社で行うタイプ
+- [マニュアル](https://access.redhat.com/documentation/en-us/openshift_container_platform/?version=3.7)
+- [必要スペック(3.6)](https://access.redhat.com/documentation/en-us/openshift_container_platform/3.6/single/installation_and_configuration/index)
+
+### スペック表
+
+|item                     |Master        |Node                   |
+|:-                       |:-            |:-                     |
+|BaseOS(min)              |RHEL7.3 or 7.4|RHEL7.3 or 7.4         |
+|NetworkManager           |-             |1.0(min)               |
+|vCPU                     |2             |1                      |
+|RAM(min)                 |16GB          |8GB                    |
+|HDD(/var/)               |40GB          |15GB                   |
+|HDD(/usr/local/bin)      |1GB           |1GB                    |
+|HDD(/tmp)                |1GB           |1GB                    |
+|HDD(for Docker's Storage)|-             |15GB(unallocated space)|
 
 --
 
