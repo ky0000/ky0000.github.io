@@ -190,7 +190,7 @@
 
 --
 
-### OpenShift と Kubernetes の違い
+### OpenShift と Kubernetes の違い①
 
 [参考:OpenShiftとKubernetesのちがうところ](http://jp-redhat.com/openeye_online/column/omizo/4093/)
 1. アクセスコントロール
@@ -203,6 +203,12 @@
   1. Source to Image
   1. Image Stream
   1. Route
+
+--
+
+### OpenShift と Kubernetes の違い②
+
+![diff](images/components.png)
 
 --
 
