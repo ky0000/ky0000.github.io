@@ -102,9 +102,9 @@
 
 ### 技術要素
 
-Linuxコンテナ技術:　libcontainer
-ファイルシステム： aufs
-etc..
+- Linuxコンテナ技術:　libcontainer
+- ファイルシステム： aufs、btrfs、Device Mapper、OverlayFS、vfs
+- etc..
 
 --
 
@@ -124,6 +124,25 @@ etc..
   - 正式にはサービスではなく、動作モードの一つ
 - Docker Composer
   - これもサービスではない
+
+--
+
+### Docker Hub
+
+- クラウドベースの Docker レジストリサービス
+- 1アカウントにつき１つだけプライベートリポジトリを作成可能
+- [プラン表](https://hub.docker.com/account/billing-plans/)
+
+--
+
+### DockerCompose
+
+- HISTORY
+  - 2013/12/21 v0.0.1 登場
+  - 2014/10/17 v1.0.0 登場
+- どういうもの？
+  - docker-compose.yml が核となり、まとめて諸々定義する
+  - コンテナオーケストレーションツール
 
 --
 
@@ -192,6 +211,8 @@ etc..
 - PaaS環境の構築から自社で行うタイプ
 - [マニュアル](https://access.redhat.com/documentation/en-us/openshift_container_platform/?version=3.7)
 - [必要スペック(3.6)](https://access.redhat.com/documentation/en-us/openshift_container_platform/3.6/single/installation_and_configuration/index)
+
+--
 
 ### スペック表
 
