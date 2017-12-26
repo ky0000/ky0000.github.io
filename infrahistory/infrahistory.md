@@ -216,16 +216,16 @@
 
 ### スペック表
 
-|item                     |Master        |Node                   |
-|:-                       |:-            |:-                     |
-|BaseOS(min)              |RHEL7.3 or 7.4|RHEL7.3 or 7.4         |
-|NetworkManager           |-             |1.0(min)               |
-|vCPU                     |2             |1                      |
-|RAM(min)                 |16GB          |8GB                    |
-|HDD(/var/)               |40GB          |15GB                   |
-|HDD(/usr/local/bin)      |1GB           |1GB                    |
-|HDD(/tmp)                |1GB           |1GB                    |
-|HDD(for Docker's Storage)|-             |15GB(unallocated space)|
+|item                   |Master     |Node             |
+|:-                     |:-         |:-               |
+|BaseOS(min)            |RHEL7.3/7.4|RHEL7.3 or 7.4   |
+|NetworkManager         |-          |1.0(min)         |
+|vCPU                   |2          |1                |
+|RAM(min)               |16GB       |8GB              |
+|HDD(/var/)             |40GB       |15GB             |
+|HDD(/usr/local/bin)    |1GB        |1GB              |
+|HDD(/tmp)              |1GB        |1GB              |
+|HDD(forDocker'sStorage)|-          |15GB(unallocated)|
 
 --
 
