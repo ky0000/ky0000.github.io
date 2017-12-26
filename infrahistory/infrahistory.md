@@ -220,8 +220,7 @@
 |:-                     |:-         |:-               |
 |BaseOS(min)            |RHEL7.3/7.4|RHEL7.3 or 7.4   |
 |NetworkManager         |-          |1.0(min)         |
-|vCPU                   |2          |1                |
-|RAM(min)               |16GB       |8GB              |
+|vCPU/RAM(min)          |2 / 16GB   |1 / 8GB          |
 |HDD(/var/)             |40GB       |15GB             |
 |HDD(/usr/local/bin)    |1GB        |1GB              |
 |HDD(/tmp)              |1GB        |1GB              |
