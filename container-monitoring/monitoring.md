@@ -31,7 +31,7 @@
 - 採用の前に fluentd の特性を知るべし。
   - "Exactly Once" or "At Most Once "
 
--- 
+--
 
 ### Heapster
 
@@ -39,10 +39,14 @@
 - Kubernetesクラスタ内の全てのminionを自動で発見
 - pod ID、コンテナ名、pod IP、ホスト名、ラベルを統計情報と一緒に保存
 
+--
+
 ### cAdvisor
 
 - Google 主に開発した Docker コンテナのリソースモニタリングツール
 ![cadvisor-logo](images/cadvisor-logo.png)
+
+--
 
 ### fluent-plugin-cadviser
 
